@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Dash Board</title>
+    <link rel="stylesheet" href="styles/dashboard.css">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+</head>
+<body>
+    <header class="container mt-5 p-5 border border-3 rounded rounded-3 text-center border-danger border-opacity-50">
+        <h1>Welcome To <span class="text-warning">Baap Er Bank</span>!!!</h1>
+    </header>
+    <section class="container mt-5">
+        <div class="row gap-4">
+            <div class="col bg-info p-5 text-center rounded rounded-3 border border-2 border-black"> 
+                <h2>Deposit</h2>
+                <h4>$<span id="deposit-balance">00</span></h4>
+            </div>
+
+            <div class="col bg-danger p-5 text-center rounded rounded-3 border border-2 border-black text-white">
+                <h2>Withdraw</h2>
+                <h4>$<span id="withdraw-balance">00</span></h4>
+            </div>
+
+            <div class="col bg-success p-5 text-center rounded rounded-3 border border-2 border-black text-white">
+                <h2>Balance</h2>
+                <h4>$<span id="my-balance">1200</span></h4>
+            </div>
+        </div>
+
+        <!-- Deposit & Withdraw Field -->
+
+        <div class="row align-items-center text-center justify-content-center mt-5 gap-3">
+
+            <!-- Input Deposit -->
+
+            <div class="col col-4 bg-info p-5 text-center rounded rounded-3 border border-2 border-black">
+                <h3>please Deposit</h3>
+                <input id="input-deposit" type="text" placeholder="Input Deposit Amount"><br>
+                <button id="deposit-btn" class="btn-1 mt-4 ps-4 pe-4 pt-2 pb-2">Deposit</button>
+            </div>
+
+            <!-- Input Withdraw Amount -->
+
+            <div class="col col-4 bg-info p-5 text-center rounded rounded-3 border border-2 border-black">
+                <h3>Please Withdraw</h3>
+                <input id="input-withdraw-amount"  type="text" placeholder="Input Withdraw Amount"><br>
+                <button id="withdraw-btn" class=" btn-1 mt-4 ps-4 pe-4 pt-2 pb-2">Withdraw</button>
+            </div>
+        </div>
+    </section>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
